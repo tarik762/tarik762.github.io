@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100;
+    background: url('../images/bg.jpg') no-repeat fixed;
+    background-size: cover;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+#root {
+    width: auto;
+}
+
+#content {
+    float: left;
+}
+
+#cv,
+#contacts {
+    position: absolute;
+    transition: all .8s;
+    z-index: -1;
+    opacity: 0;
+}
+
+#contacts.to-right,
+#cv.to-right {
+    transform: translate(500px, 0);
+    z-index: 1;
+    opacity: 1;
+}
+
+#container>div {
+
+    width: 490px;
+    height: 560px;
+    background-color: white;
+    background-image: url('../images/bg-block.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container {
+    border: 1px solid red;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 490px;
+    min-height: 560px;
+    transition: all .8s;
+}
+
+#container.to-left {
+    width: 990px;
+}
+
+#menu {
+    width: 180px;
+    position: absolute;
+    margin-left: -190px;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    margin-bottom: 5px;
+}
+
+#menu ul li a {
+    display: block;
+    width: 160px;
+    height: 100%;
+    padding: 10px;
+    background-color: #08aeac;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    transition: box-shadow 400ms linear 50ms, letter-spacing 400ms ease-out, font 400ms ease-out;
+
+}
+
+#menu ul li a:hover {
+    box-shadow: inset 200px 0px 0px 0px rgba(169, 122, 58, 1);
+    letter-spacing: 1px;
+}
+
+@media only screen and (min-width:1200px) {}
