@@ -68,3 +68,5 @@ document.getElementById('mobile-menu-close').addEventListener('click', e => {
     document.getElementById('mobile-menu').classList.remove('open');
 })
 
+//Print my age
+document.getElementById('b-year').appendChild(document.createTextNode((birthDate => { return Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10) })('1989-11-06')));
