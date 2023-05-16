@@ -464,7 +464,8 @@ body.not-overflow {
     margin-top: 48px;
     background-image: url('../images/face.jpg');
     background-position: center;
-    background-size: contain;
+    background-size: 100%;
+
 }
 
 #face img {
