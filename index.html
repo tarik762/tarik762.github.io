@@ -6,30 +6,514 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Тарас Мельников :: розробник програмного забезпечення</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/9a5fe273e6.js' crossorigin='anonymous'></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/font.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
 
 </head>
 
-<body>
+<body id="body">
+    <div id="overlay">
+        <div></div>
+    </div>
+    <div id="sandwitch">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div id="mobile-menu">
+        <div id="mobile-menu-close">x</div>
+        <ul>
+            <li>
+                <a href="#content">Додому</a>
+            </li>
+            <li>
+                <a href="#cv">Досвід</a>
+            </li>
+            <li>
+                <a href="#skills">Навики</a>
+            </li>
+            <li>
+                <a href="#projects">Портфоліо</a>
+            </li>
+            <li>
+                <a href="#contacts">Контакти</a>
+            </li>
+        </ul>
+    </div>
     <div id="root">
+
+
+
         <div id="container">
             <div id="content">
+
                 <div id="menu">
                     <ul>
                         <li>
                             <a href="#home">Додому</a>
                         </li>
                         <li>
-                            <a href="#cv">Резюме</a>
+                            <a href="#cv">Досвід</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Навики</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Портфоліо</a>
                         </li>
                         <li>
                             <a href="#contacts">Контакти</a>
                         </li>
                     </ul>
                 </div>
+                <div id="face">
+                    <img src="images/face.jpg" />
+                </div>
+                <h1>
+                    Привіт, я <span>Тарас</span>.
+                </h1>
+                <p class="semi-bold-title">Full-stack software developer</p>
+                <hr class="hr" />
+                <p class="center-text">З нетерпінням
+                    чекаю на можливість співпраці і створення чудових проектів разом!</p>
+                <div class="contact-button">
+                    <p><a rel="noopener noreferrer" href="mailto:tarik762@ukr.net">tarik762@ukr.net</a> / <a
+                            rel="noopener noreferrer" href="tel:+380 99 37 36 583">+380993736583</a>
+                    </p>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/tarik762" rel="noopener noreferrer" target="_blank">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="viber://add?number=380993736583">
+                        <i class="fa-brands  fa-viber"></i>
+                    </a>
+                    <a href="https://t.me/vrreznov">
+                        <i class="fa-brands  fa-telegram"></i>
+                    </a>
+                </div>
+                <div class="clear"></div>
             </div>
-            <div id="cv">grgr</div>
-            <div id="contacts">grgr</div>
+            <div id="cv">
+                <div class="section">
+                    <h2 class="section-title">Робочий досвід</h2>
+                    <!--<div class="resume-buttons">
+                        <a href="#" target="_blank"><i class="fa fa-download"></i>
+                            &nbsp;Завантажити
+                        </a>
+                    </div>-->
+                    <h2 class="section-title2"><i class="fa fa-flag"></i>&nbsp; Досвід роботи</h2>
+                    <div class="resume-item">
+                        <h3 class="section-item-title-1">Сарненська міська рада</h3>
+                        <h4 class="job">PHP, JavaScript (jQuery), HTML, CSS, Linux bash, Hardware /
+                            <span class="job-date">Квітень 2021 - Квітень 2023</span>
+                        </h4>
+                        <div class="graduation-description">
+                            <p>
+                                Розробка та деплой сайтів державних органів: Сарненської міської ради, Сарненської
+                                районної ради, Управління освіти Сарненської міської ради.
+                                Розробка та реалізація локальної мережі Сарненської міської ради.
+                                Створення та обслуговування власного основного серверу та локального серверу на базі
+                                Linux Ubuntu з підтримкою гостьових віртуальних маших як і на Linux так і на Windows.
+                                Підняття та обслуговування веб серверу та поштовго серверу на базі Hestia CP.
+                                Підняття та обслуговування локального серверу роутера і файлообмінника.
+                                Впровадження і підтримка державних сервісів.
+                                (Any-кейщик)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="section-item-title-1">ФОП</h3>
+                        <h4 class="job">JavaScript (jQuery), HTML, CSS /
+                            <span class="job-date">Червень 2018 - Квітень 2021</span>
+                        </h4>
+                        <div class="graduation-description">
+                            <p>
+                                Розробка та деплой віджетів для amoCRM.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="section-item-title-1">Компанія "Світ Покрівлі"</h3>
+                        <h4 class="job">PHP, JavaScript (jQuery), HTML, CSS, Linux bash /
+                            <span class="job-date">Лютий 2017 - Квітень 2021</span>
+                        </h4>
+                        <div class="graduation-description">
+                            <p>
+                                Підтримка існуючого веб сайту компанії. Розширення функціоналу веб сайту під потреби
+                                компанії.
+                                (Any-кейщик)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="section-item-title-1">Сарненська районна державна адміністрація</h3>
+                        <h4 class="job">PHP, JavaScript (jQuery), HTML, CSS, Linux bash /
+                            <span class="job-date">Липень 2012 - Лютий 2017</span>
+                        </h4>
+                        <div class="graduation-description">
+                            <p>
+                                Підтримка існуючого веб сайту установи. Розширення функціоналу веб сайту під потреби
+                                державних сервісів.
+                                Розробка та реалізація локальної мережі. Створення локального та веб серверу (все в 1)
+                                на базі Linux Ubuntu.
+                                (Any-кейщик)
+                            </p>
+                        </div>
+                    </div>
+                    <h2 class="section-title2"><i class="fa fa-university"></i>&nbsp; Освіта</h2>
+                    <div class="resume-item">
+                        <h3 class="section-item-title-1">Системне програмування, ступінь магістра</h3>
+                        <h4 class="job">Національний університет "Львівська політехніка", Факультет системне
+                            програмування /
+                            <span class="job-date">2011 - 2012</span>
+                        </h4>
+                        <div class="graduation-description">
+                            <p>
+                                Набув навиків:
+                            <ul style="margin-left: 18px;">
+                                <li>розробки інтерфейсів користувача</li>
+                                <li>технологій програмування комп'ютерних мереж</li>
+                                <li>технологій паралельного та веб програмування</li>
+                                <li>проектування системних, прикладних, мережних і веб-програм</li>
+                                <li>проектування інтелектуальних програмних систем, операційних систем, утиліт,
+                                    драйверів і інтерфейсів користувача</li>
+                            </ul>
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="resume-item">
+                        <h3 class="section-item-title-1">Комп'ютерна інженерія, ступінь бакалавра</h3>
+                        <h4 class="job">Національний університет "Львівська політехніка", Факультет системне
+                            програмування /
+                            <span class="job-date">2007 - 2011</span>
+                        </h4>
+                        <div class="graduation-description">
+                            <p>
+                                Навчився знати і розуміти наукові і математичні принципи, що лежать в основі
+                                функціонування комп’ютерних засобів, систем та мереж.
+                                Засвоїв основи професійно-орієнтованих дисциплін спеціальності в галузі комп’ютерної
+                                інженерії.
+                                Отримав поглиблені знання принаймні в одному з напрямків галузі комп’ютерної інженерії :
+                                комп’ютерні системи та мережі;
+                                системне програмування; спеціалізовані комп’ютерні системи;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skills">
+                <div class="section">
+                    <h2 class="section-title">Навики</h2>
+                    <h3 class="section-item-title-2"><i class="fa fa-code"></i>&nbsp;&nbsp; Мови програмування</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%; background-color: #08aeac;">
+                                    <span>Javascript</span>
+                                </div>
+                                <div class="progress-bar-rigth">80%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%; background-color: #434343">
+                                    <span>PHP</span>
+                                </div>
+                                <div class="progress-bar-rigth">70%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%; background-color: #b31f27;">
+                                    <span>HTML/CSS</span>
+                                </div>
+                                <div class="progress-bar-rigth">70%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 60%; background-color: #08aeac;">
+                                    <span>Python</span>
+                                </div>
+                                <div class="progress-bar-rigth">60%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%; background-color: #434343">
+                                    <span>SQL</span>
+                                </div>
+                                <div class="progress-bar-rigth">50%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 30%; background-color: #b31f27;">
+                                    <span>C,C++,ASM</span>
+                                </div>
+                                <div class="progress-bar-rigth">30%</div>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <h3 class="section-item-title-2"><i class="fa fa-users"></i>&nbsp;&nbsp; Технології</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%; background-color: #08aeac;">
+                                    <span>ООП</span>
+                                </div>
+                                <div class="progress-bar-rigth">80%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 75%; background-color: #434343;">
+                                    <span>Git / GiHub</span>
+                                </div>
+                                <div class="progress-bar-rigth">75%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%; background-color: #b31f27;">
+                                    <span>Responsive веб дизайн</span>
+                                </div>
+                                <div class="progress-bar-rigth">70%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 65%; background-color: #08aeac;">
+                                    <span>MVC</span>
+                                </div>
+                                <div class="progress-bar-rigth">65%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%; background-color: #434343;">
+                                    <span>Шаблони проектування</span>
+                                </div>
+                                <div class="progress-bar-rigth">50%</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="section-item-title-2"><i class="fa fa-laptop"></i>&nbsp;&nbsp;
+                        Фреймворки / Бібліотеки / CMS</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 85%; background-color: #08aeac;">
+                                    <span>jQuery</span>
+                                </div>
+                                <div class="progress-bar-rigth">85%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 80%; background-color: #434343;">
+                                    <span>DLE</span>
+                                </div>
+                                <div class="progress-bar-rigth">80%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%; background-color: #b31f27;">
+                                    <span>OpenCart</span>
+                                </div>
+                                <div class="progress-bar-rigth">70%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 70%; background-color: #08aeac;">
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="progress-bar-rigth">70%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 50%; background-color: #434343;">
+                                    <span>Wordpress</span>
+                                </div>
+                                <div class="progress-bar-rigth">50%</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 40%; background-color: #b31f27;">
+                                    <span>Django</span>
+                                </div>
+                                <div class="progress-bar-rigth">40%</div>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="section-item-title-2"><i class="fa fa-language"></i>&nbsp;&nbsp;
+                        Англійська</h3>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 32%; background-color: #08aeac;">
+                                    <span>Розмовний</span>
+                                </div>
+                                <div class="progress-bar-rigth">A2</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="progress">
+                                <div class="progress-bar" style="width: 48%; background-color: #434343;">
+                                    <span>Документація</span>
+                                </div>
+                                <div class="progress-bar-rigth">B1</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="projects">
+                <div class="section">
+                    <h2 class="section-title">Портфоліо</h2>
+                    <div class="blog-item">
+                        <div class="blog-item-wrapper">
+                            <div class="blog-item-thumb"><img src="images/port1.png"></div>
+                            <div class="blog-item-infos">
+                                <div class="blog-item-title-wrapper">
+                                    <h2 class="blog-item-title title-border"><a href="https://sarny-rada.gov.ua">Сайт
+                                            Сарненської міської ради</a></h2>
+                                </div>
+                                <div class="blog-item-description">
+                                    <p>Розробка сайту державного органу з проектування шаблонів до деплоя. Все від ключ
+                                    </p>
+                                </div>
+                                <div class="resume-buttons">
+                                    <a class="link" href="https://sarny-rada.gov.ua" target="_blank"><i
+                                            class="fa fa-link"></i>
+                                        &nbsp;Перейти
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item-wrapper">
+                            <div class="blog-item-thumb"><img src="images/port2.png"></div>
+                            <div class="blog-item-infos">
+                                <div class="blog-item-title-wrapper">
+                                    <h2 class="blog-item-title title-border"><a href="https://svitpokrivli.ua">Сайт
+                                            компанії "Світ Покрівлі"</a></h2>
+                                </div>
+                                <div class="blog-item-description">
+                                    <p>Підтримка та удосконалення бек-енду та фронд-енду сайту компанії</p>
+                                </div>
+                                <div class="resume-buttons">
+                                    <a class="link" href="https://svitpokrivli.ua" target="_blank"><i
+                                            class="fa fa-link"></i>
+                                        &nbsp;Перейти
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item-wrapper">
+                            <div class="blog-item-thumb"><img src="images/port3.png"></div>
+                            <div class="blog-item-infos">
+                                <div class="blog-item-title-wrapper">
+                                    <h2 class="blog-item-title title-border"><a
+                                            href="https://edu.sarny-rada.gov.ua">Сайт
+                                            управління освіти Сарненської міської ради</a></h2>
+                                </div>
+                                <div class="blog-item-description">
+                                    <p>Розробка сайту державного органу з проектування шаблонів до деплоя. Все від ключ,
+                                        але без підтримки надалі.
+                                    </p>
+                                </div>
+                                <div class="resume-buttons">
+                                    <a class="link" href="https://edu.sarny-rada.gov.ua" target="_blank"><i
+                                            class="fa fa-link"></i>
+                                        &nbsp;Перейти
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item-wrapper">
+                            <div class="blog-item-thumb"><img src="images/port4.png"></div>
+                            <div class="blog-item-infos">
+                                <div class="blog-item-title-wrapper">
+                                    <h2 class="blog-item-title title-border"><a href="https://sarnyrrada.gov.ua">Сайт
+                                            Сарненської районної ради</a></h2>
+                                </div>
+                                <div class="blog-item-description">
+                                    <p>Розробка сайту державного органу з проектування шаблонів до деплоя. Все від ключ,
+                                        але без підтримки надалі.
+                                    </p>
+                                </div>
+                                <div class="resume-buttons">
+                                    <a class="link" href="https://sarnyrrada.gov.ua" target="_blank"><i
+                                            class="fa fa-link"></i>
+                                        &nbsp;Перейти
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-item">
+                        <div class="blog-item-wrapper">
+                            <div class="blog-item-infos">
+                                <div class="blog-item-title-wrapper">
+                                    <h2 class="blog-item-title title-border"><a href="files/amocrm.zip">Віджети
+                                            amoCRM</a></h2>
+                                </div>
+                                <div class="blog-item-description">
+                                    <p>Розробка під ключ віджетів для amoCRM. Використовувалися Javascript з jQuery, PHP
+                                        HTML/CSS
+                                    </p>
+                                </div>
+                                <div class="resume-buttons">
+                                    <a style="width: 148px;" class="link" href="files/amocrm.zip" target="_blank"><i
+                                            class="fa fa-file"></i>
+                                        &nbsp;Завантажити
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contacts">
+                <div class="section">
+                    <h2 class="section-title">Контакти</h2>
+                    <div class="contact-infos">
+                        <h4 class=" contact-subtitle-1"><i class="fa fa-map"></i>&nbsp; Адреса</h4>
+                        <p>Україна, м. Сарни.</p>
+                        <h4 class="contact-subtitle-1"><i class="fa fa-phone-square"></i>&nbsp; Мобільний</h4>
+                        <p>+380 99 3736 583</p>
+                        <h4 class="contact-subtitle-1"><i class="fa fa-envelope"></i>&nbsp; E-mail</h4>
+                        <p>tarik762@ukr.net</p>
+                        <h4 class="contact-subtitle-1"><i class="fa fa-social"></i>&nbsp; Соціальні мережі</h4>
+                        <div class="social" style="margin:0">
+                            <a href="https://github.com/tarik762" rel="noopener noreferrer" target="_blank">
+                                <i class="fa fa-github"></i>
+                            </a>
+                            <a href="viber://add?number=380993736583">
+                                <i class="fa-brands  fa-viber"></i>
+                            </a>
+                            <a href="https://t.me/vrreznov">
+                                <i class="fa-brands  fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
