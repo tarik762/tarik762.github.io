@@ -1,3 +1,13 @@
+//start-overlay hiding
+document.querySelector('#start-overlay-text h2').classList.add('hide');
+document.querySelector('#start-overlay-text h3').classList.add('hide');
+document.getElementById('body').classList.add('not-overflow');
+document.getElementById('start-overlay').classList.add('hide');
+document.getElementById('start-overlay').addEventListener('transitionend', e => {
+    document.getElementById('body').classList.remove('not-overflow');
+    e.target.style.display = 'none';
+});
+
 //Catch clicks in menu > li > a
 const menu_a_selectors = document.getElementById('menu').querySelectorAll('ul li a')
 menu_a_selectors.forEach(elem => {
