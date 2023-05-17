@@ -1,15 +1,11 @@
 //start-overlay hiding
-// document.querySelector('#start-overlay-text h2').classList.remove('hide');
-// document.querySelector('#start-overlay-text h3').classList.remove('hide');
-
 document.querySelector('#start-overlay-text h2').classList.add('hide');
 document.querySelector('#start-overlay-text h3').classList.add('hide');
 document.getElementById('body').classList.add('not-overflow');
 document.getElementById('start-overlay').classList.add('hide');
 document.getElementById('start-overlay').addEventListener('transitionend', e => {
     document.getElementById('body').classList.remove('not-overflow');
-    e.target.style.display = 'none';
-    document.getElementById('start-overlay').classList.remove('hide');
+    document.getElementById('start-overlay').remove();
 });
 
 //Catch clicks in menu > li > a
